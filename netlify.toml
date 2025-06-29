@@ -1,6 +1,6 @@
 [build]
   command = "npm install && npm run build"
-  publish = "dist/movieapp" # Ajusta si tu carpeta 'dist' es diferente (e.g., dist/movieapp)
+  publish = "dist/movieapp/browser"
 
 [[redirects]]
   from = "/*"
