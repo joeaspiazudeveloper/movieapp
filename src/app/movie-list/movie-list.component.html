@@ -1,0 +1,12 @@
+<h1>Movie List</h1>
+
+<div class="movie-grid">
+  @for (movie of movies; track movie.id) {
+    <div class="movie-card">
+      <img [src]="movie.imageUrl" alt="{{ movie.title }}">
+      <h3>{{ movie.title }}</h3>
+      <button (click)="selectMovie(movie.id)">Check Availability</button> </div>
+  } @empty {
+    <p>No movies!</p>
+  }
+</div>
